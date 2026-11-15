@@ -1,0 +1,55 @@
+# Recipe for building an omnibus EPUB from several Standard Ebooks EPUBs.
+# Paths are relative to the project root (the parent of recipes/).
+
+title = "The Complete Sherlock Holmes"
+subtitle = "The Four Novels and Fifty-Six Short Stories"
+author = "Arthur Conan Doyle"
+author_file_as = "Doyle, Arthur Conan"
+language = "en-GB"
+description = "All four novels and fifty-six short stories of the Sherlock Holmes canon, compiled from the Standard Ebooks editions."
+cover = "input/sherlock-holmes-complete-cover.jpg"
+output = "the-complete-sherlock-holmes"   # build/<output>.epub
+input_dir = "input"
+build_dir = "build"
+
+# Optional knobs (defaults shown; suited to Standard Ebooks sources)
+# keep_titlepage  = true
+# drop_epub_types = ["imprint", "colophon", "copyright-page"]
+# drop_files      = ["onix.xml"]
+
+# Books in reading order. `url` is the epub download; `slug` names the subfolder.
+[[books]]
+slug = "a-study-in-scarlet"
+url = "https://standardebooks.org/ebooks/arthur-conan-doyle/a-study-in-scarlet/downloads/arthur-conan-doyle_a-study-in-scarlet.epub"
+
+[[books]]
+slug = "the-sign-of-the-four"
+url = "https://standardebooks.org/ebooks/arthur-conan-doyle/the-sign-of-the-four/downloads/arthur-conan-doyle_the-sign-of-the-four.epub"
+
+[[books]]
+slug = "the-adventures-of-sherlock-holmes"
+url = "https://standardebooks.org/ebooks/arthur-conan-doyle/the-adventures-of-sherlock-holmes/downloads/arthur-conan-doyle_the-adventures-of-sherlock-holmes.epub"
+
+[[books]]
+slug = "the-memoirs-of-sherlock-holmes"
+url = "https://standardebooks.org/ebooks/arthur-conan-doyle/the-memoirs-of-sherlock-holmes/downloads/arthur-conan-doyle_the-memoirs-of-sherlock-holmes.epub"
+
+[[books]]
+slug = "the-hound-of-the-baskervilles"
+url = "https://standardebooks.org/ebooks/arthur-conan-doyle/the-hound-of-the-baskervilles/downloads/arthur-conan-doyle_the-hound-of-the-baskervilles.epub"
+
+[[books]]
+slug = "the-return-of-sherlock-holmes"
+url = "https://standardebooks.org/ebooks/arthur-conan-doyle/the-return-of-sherlock-holmes/downloads/arthur-conan-doyle_the-return-of-sherlock-holmes.epub"
+
+[[books]]
+slug = "the-valley-of-fear"
+url = "https://standardebooks.org/ebooks/arthur-conan-doyle/the-valley-of-fear/downloads/arthur-conan-doyle_the-valley-of-fear.epub"
+
+[[books]]
+slug = "his-last-bow"
+url = "https://standardebooks.org/ebooks/arthur-conan-doyle/his-last-bow/downloads/arthur-conan-doyle_his-last-bow.epub"
+
+[[books]]
+slug = "the-casebook-of-sherlock-holmes"
+url = "https://standardebooks.org/ebooks/arthur-conan-doyle/the-casebook-of-sherlock-holmes/downloads/arthur-conan-doyle_the-casebook-of-sherlock-holmes.epub"
